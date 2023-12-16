@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Tube</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+    </style>
+  </head>
+<body class="collectionBody">
+  <nav class="navBar">
+    <a  class="indexHead"href="index.html">Home</a>
+    <a class="japaneseMusicHead" href="pages/collection-1.html">Japanese Music</a>
+    <a class="japaneseCultureHead" href="pages/collection-2.html">Japanese Culture</a>
+    <a class="japaneseLanguageHead" href="pages/collection-3.html">Japanese Language</a>
+    <a class="uploadHead" href="form.html">Upload</a>
+    <form class="searchbar">
+      <input type="text" name="search" placeholder="Search..">
+    </form>
+  </nav>
+
+  <h1>Add New Video</h1>
+
+  <form class="formPage" action="/action_page.php">
+    <label for="videoTitle">Video Title</label>
+    <br>
+    <input id="videoTitle" name="videoTitle" type="text">
+    <br><br><br>
+    <label for="videoDescription">Video Description</label>
+    <br>
+    <br>
+    <textarea id="videoDescription" name="videoDescription" rows="10" cols="50"></textarea>
+    <br><br><br>
+    <label for="myVideo"></label>
+    <input type="file" id="myVideo" name="myVideo">
+    <br><br>
+    <input list="categories">
+    <select id="categories">
+      <option disabled selected value="">Choose collection</option>
+      <option value="collection-1">Collection 1</option>
+      <option value="collection-2">Collection 2</option>
+      <option value="collection-3">Collection 3</option>
+    </select><br><br>
+    <input type="radio" id="public" name="host" value="public">
+    <label class="public" for="public">Public</label>
+    <br>
+    <input type="radio" id="private" name="host" value="private">
+    <label class="private" for="private">Private</label>
+    <br><br>
+    <input class="submit" type="submit" value="Submit">
+  </form>
+  <hr>  
+  <footer>&copy; Copyright</footer>
+</body>
+</html>
